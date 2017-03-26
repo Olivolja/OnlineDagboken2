@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*_________________________allmänt___________________________________________*/
+* {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    background-color:beige;
+}
+.block {
+	display:block;
+}
+.nodec {
+	text-decoration:none;
+	color:black;
+}
+.marginleft {
+	margin-left:10px;
+}
+.marginright {
+	margin-right:10px;
+}
+.margin20 {
+	margin:20px;
+}
+.smalltext {
+	font-size:0.8em;
+}
+.red {
+	color:#FF0004;
+}
+.white {
+	color:white;
+}
+/*____________________________DROP DOWN MENY________________________________________*/
+.burgermeny {
+	float:right;
+
+}
+
+.burgerlist {
+	display:none;
+	background:beige;
+	float:right;
+	position:relative;
+	margin-top:5px;
+	margin-right:10px;
+	width:;
+	z-index:500;
+}
+.burgerlist.burgerstyle {
+	display:block !important;
+	list-style:none;
+	font-size:1em;
+	text-decoration:none;
+}
+
+/*______________________________________________________________*/
+.wrapper {
+	width:70%;
+	margin:auto;
+	background:;
+}
+
+.header {
+	height:120px;
+	width:100%;
+	background:none;
+	margin-bottom:10px;
+}
+.postbox {
+	width:100%;
+	background:none;
+	float:left;
+}
+.listbox{
+	width:30%;
+	box-sizing:border-box;
+	padding:10px;
+	background:none;
+	float:right;
+	margin-left:2%;
+}
+.post {
+	background:;
+	max-width:70%;
+	border-bottom:2px solid #031D80;
+	border-left:5px solid #031D80;
+	padding:10px;
+	box-sizing:border-box;
+	margin-bottom:10x;
+	
+}
+#overlay {
+    min-height: 100px;
+    max-height: 300px;
+    max-width:60%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-bottom: 0px solid rgba(250, 250, 250, 1) ;
+    position: relative;
+    border-bottom:2px solid #031D80;
+	border-left:5px solid #031D80;
+    padding: 10px;
+
+}
+#overlay::before {
+    background-image: linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba(245, 245, 220, 1) 100% );
+    background-image: -moz-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba(245, 245, 220, 1) 100% );
+    background-image: -ms-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba(245, 245, 220, 1) 100% );
+    background-image: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba(245, 245, 220, 1) 100% );
+    content: "\00a0";
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+/*
+#overlay::before {
+    background-image: linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    background-image: -moz-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    background-image: -ms-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    background-image: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    background-image: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1) 100% );
+    content: "\00a0";
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+/*
+.post2{
+    background:red;
+    max-width:68%;
+    max-height: 300px;
+	border-bottom:2px solid #031D80;
+	border-left:5px solid #031D80;
+	padding:0px;
+	box-sizing:border-box;
+	margin-bottom:10x;
+    overflow-y: hidden;
+}
+
+#overlay{
+    height: 300px;
+    background: -webkit-linear-gradient(top, rgba(255,0,0,0) 0%, rgba(255,0,0,1) 100%); /* For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(top, rgba(255,0,0,0) 0%, rgba(255,0,0,1) 100%); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(top, rgba(255,0,0,0) 0%, rgba(255,255,100,1) 100%); /* For Firefox 3.6 to 15 
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, rgba(255,0,0,1) 100%); /* Standard syntax (must be last) 
+    content: "\00a0";
+    position:;
+    bottom: 0px;
+    width: 100%;
+    
+}
+*/
+.rubrik {
+	font-family:'Poiret One', sans-serif;
+    font-size:1.5em;
+}
+/*________________EDIT__________________*/
+.editbox {
+    background: #031D80;
+    height: 100%;
+    width: 70%;
+    border-radius: 28px;
+    padding: 15px;
+    padding-top: 20px;
+    color: white;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+.titlefield {
+    width: 100%;
+    font-size: 1.5em;
+    font-family:'Poiret One', sans-serif;
+}
+.textfield {
+    width:;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+}
+/*________________LOGIN_FORM__________________*/
+.mainlogo {
+	width:100px;
+	display:block;
+	margin:auto;
+	margin-top:25px;
+}
+.logo {
+	width:100px;
+	float:left;
+}
+.edit {
+	
+}
+.welcome {
+	color:#031D80;
+	font-family: 'Poiret One', sans-serif;
+	padding:0;
+	padding-top:40px;
+	margin:0;
+}
+.loginwrapper{
+	height:;
+	width:100%;
+	background:;
+	text-align:center;
+}
+.loginbox{
+	height:;
+	width:100%;
+	background:#031D80;
+	opacity:0.7;
+	text-align:center;
+	
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+}
+.loginbtn {
+	font-size:2em;
+	background:white;
+	border:1px solid black;
+	border-radius:10px;
+	display:block;
+	padding:5px;
+		
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.bigbtn {
+  background: #e7e7e7;
+  border: 2px solid #838383;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #393838;
+  font-size: 18px;
+  padding: 8px 14px 8px 14px;
+  text-decoration: none;
+  cursor:pointer;
+}
+.bigbtn hover {
+}
+
+.logform {
+}
+/*______________________________NEW_PASSWORD________________________________*/
+#passbox {
+    width:200px;
+    margin: auto;
+}
